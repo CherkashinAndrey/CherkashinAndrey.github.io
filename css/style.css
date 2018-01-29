@@ -805,55 +805,68 @@ input::-ms-clear {
   margin-top: 3rem;
 }
 
-.header-form-line input:not([type=checkbox]) {
+.header-form-line input:not([type=checkbox]),
+.header-form-line select {
   width: 100%;
   padding: 1rem;
   background: #edf1f3;
   font-size: 1.3rem;
+  color: #58575c;
   border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
-.header-form-line input:not([type=checkbox])::-webkit-input-placeholder {
+.header-form-line input:not([type=checkbox])::-webkit-input-placeholder,
+.header-form-line select::-webkit-input-placeholder {
   color: #58575c;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-.header-form-line input:not([type=checkbox])::-moz-placeholder {
+.header-form-line input:not([type=checkbox])::-moz-placeholder,
+.header-form-line select::-moz-placeholder {
   color: #58575c;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-.header-form-line input:not([type=checkbox]):-moz-placeholder {
+.header-form-line input:not([type=checkbox]):-moz-placeholder,
+.header-form-line select:-moz-placeholder {
   color: #58575c;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-.header-form-line input:not([type=checkbox]):-ms-input-placeholder {
+.header-form-line input:not([type=checkbox]):-ms-input-placeholder,
+.header-form-line select:-ms-input-placeholder {
   color: #58575c;
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
 
-.header-form-line input:not([type=checkbox]):focus::-webkit-input-placeholder {
+.header-form-line input:not([type=checkbox]):focus::-webkit-input-placeholder,
+.header-form-line select:focus::-webkit-input-placeholder {
   opacity: 0;
 }
 
-.header-form-line input:not([type=checkbox]):focus::-moz-placeholder {
+.header-form-line input:not([type=checkbox]):focus::-moz-placeholder,
+.header-form-line select:focus::-moz-placeholder {
   opacity: 0;
 }
 
-.header-form-line input:not([type=checkbox]):focus:-moz-placeholder {
+.header-form-line input:not([type=checkbox]):focus:-moz-placeholder,
+.header-form-line select:focus:-moz-placeholder {
   opacity: 0;
 }
 
-.header-form-line input:not([type=checkbox]):focus:-ms-input-placeholder {
+.header-form-line input:not([type=checkbox]):focus:-ms-input-placeholder,
+.header-form-line select:focus:-ms-input-placeholder {
   opacity: 0;
 }
 
